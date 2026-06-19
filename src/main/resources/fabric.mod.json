@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "f8wqaddons",
+	"version": "${version}",
+	"name": "f8wqAddons",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/f8wqaddons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.f8wq.f8wqaddons.F8wqAddons"
+		],
+		"client": [
+			"com.f8wq.f8wqaddons.client.F8wqAddonsClient"
+		]
+	},
+	"mixins": [
+		"f8wqaddons.mixins.json",
+		{
+			"config": "f8wqaddons.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
