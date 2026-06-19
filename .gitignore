@@ -40,5 +40,4 @@ replay_*.log
 *.jfr
 
 # local notes
-working.md
 io/
